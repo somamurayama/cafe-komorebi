@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>森のカフェ こもれび｜新潟の山あいにある山小屋カフェ</title>
+  <meta name="description" content="新潟県の山あいにある山小屋カフェ「森のカフェ こもれび」。木漏れ日の中で、地元野菜のランチと自家焙煎コーヒーをどうぞ。ドライブや登山の途中に。席のご予約はWebまたはお電話で。">
+  <meta name="theme-color" content="#2f4a3a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="森のカフェ こもれび">
+  <meta property="og:description" content="木漏れ日の中で、地元食材のランチと自家焙煎コーヒーを楽しむ山小屋カフェ。">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JSが動く環境でだけフェードイン用の初期状態にする（JS無効時も内容が見えるように） -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="logo" href="#top" aria-label="森のカフェ こもれび トップへ">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3 L27 22 H5 Z" fill="currentColor" opacity=".9"/>
+          <path d="M16 10 L24 25 H8 Z" fill="currentColor"/>
+          <rect x="14.5" y="25" width="3" height="4" rx="1" fill="currentColor"/>
+        </svg>
+        <span class="logo__text"><small>森のカフェ</small>こもれび</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-controls="globalNav" aria-expanded="false" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="globalNav" aria-label="メインメニュー">
+        <ul class="nav__list">
+          <li><a href="#about">こもれびについて</a></li>
+          <li><a href="#features">こだわり</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#voice">お客様の声</a></li>
+          <li><a href="#access">店舗情報</a></li>
+          <li><a class="btn btn--small btn--sun" href="#reserve">席を予約する</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== 1. First View ===== -->
+    <section class="hero" id="top">
+      <picture class="hero__bg">
+        <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=75">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&h=1400&q=75"
+             alt="朝の光が木々の間から差し込む、緑豊かな森の小道" fetchpriority="high">
+      </picture>
+      <div class="hero__inner">
+        <p class="hero__label">新潟の山あい　森の中の山小屋カフェ</p>
+        <h1 class="hero__title">木漏れ日の下で、<br>ゆっくりお昼に<br class="sp-only">しませんか。</h1>
+        <p class="hero__lead">地元の畑でとれた野菜のランチと、<br class="sp-only">店で焙煎したコーヒー。<br>ドライブや山歩きの途中に、ひと休みを。</p>
+        <div class="hero__cta">
+          <a class="btn btn--sun btn--large" href="#reserve">席を予約する</a>
+          <a class="btn btn--ghost btn--large" href="tel:0250000000">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+            電話で予約
+          </a>
+        </div>
+        <p class="hero__note">営業 10:00〜17:00　定休日 火・水曜</p>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="次のセクションへ"><span></span></a>
+    </section>
+
+    <!-- ===== 2. About ===== -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__text fade-in">
+          <p class="section__en">About</p>
+          <h2 class="section__title">森の音を聞きながら、<br>いつもより、ゆっくりと。</h2>
+          <p>
+            こもれびは、新潟の山あいに建つ小さな山小屋カフェです。
+            窓の外にはブナの森。風が吹くたびに、テーブルの上の光がゆらゆらと揺れます。
+          </p>
+          <p>
+            お出ししているのは、近くの農家さんから届く季節の野菜を使ったランチと、
+            店内の小さな焙煎機で焼いたコーヒー。特別なものはありませんが、
+            ひとつひとつ丁寧に、手をかけてつくっています。
+          </p>
+          <p>
+            峠を越えるドライブの途中に。山から下りてきた帰り道に。
+            時計を気にせず過ごせる場所でありたいと思っています。
+          </p>
+        </div>
+        <div class="about__images fade-in">
+          <img class="about__img about__img--main" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=75"
+               alt="窓辺の木のテーブルに置かれたコーヒープレスとカップ。窓の外には木々の緑が広がる" loading="lazy" width="900" height="1100">
+          <img class="about__img about__img--sub" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=75"
+               alt="木のテーブルに並ぶ、ラテアートのカフェラテと観葉植物" loading="lazy" width="600" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Features ===== -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section__head fade-in">
+          <p class="section__en">Our Kodawari</p>
+          <h2 class="section__title">こもれびの、3つのこだわり</h2>
+        </div>
+
+        <div class="features__list">
+          <article class="feature fade-in">
+            <div class="feature__img">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=75"
+                   alt="収穫したばかりの色とりどりの新鮮な野菜" loading="lazy" width="800" height="600">
+              <span class="feature__num">01</span>
+            </div>
+            <div class="feature__body">
+              <h3 class="feature__title">朝どれの、地元野菜</h3>
+              <p>店から車で10分ほどの農家さんから、その朝収穫した野菜が届きます。雪国の寒暖差で育った野菜は、甘みがぎゅっと濃いのが特長。日替わりの副菜で、季節の移ろいを感じてください。</p>
+            </div>
+          </article>
+
+          <article class="feature fade-in">
+            <div class="feature__img">
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=75"
+                   alt="焙煎されたばかりの香ばしいコーヒー豆" loading="lazy" width="800" height="600">
+              <span class="feature__num">02</span>
+            </div>
+            <div class="feature__body">
+              <h3 class="feature__title">店内で、自家焙煎</h3>
+              <p>生豆から店内の小型焙煎機で、少量ずつ焼き上げています。山の湧き水と相性のよい、すっきりした中深煎りが定番。気に入った豆は100gからお持ち帰りいただけます。</p>
+            </div>
+          </article>
+
+          <article class="feature fade-in">
+            <div class="feature__img">
+              <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=75"
+                   alt="朝霧の森に、木々の間から光が差し込む風景" loading="lazy" width="800" height="600">
+              <span class="feature__num">03</span>
+            </div>
+            <div class="feature__body">
+              <h3 class="feature__title">森が見える、テラス席</h3>
+              <p>ウッドデッキのテラス席は、目の前がそのままブナの森。鳥の声と葉ずれの音が、いちばんのBGMです。愛犬と一緒にご利用いただけます（リードの着用をお願いしています）。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Menu ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head fade-in">
+          <p class="section__en">Menu</p>
+          <h2 class="section__title">メニュー</h2>
+          <p class="section__desc">価格はすべて税込です。仕入れにより内容が変わることがあります。</p>
+        </div>
+
+        <div class="menu__grid">
+          <!-- Lunch -->
+          <div class="menu-card fade-in">
+            <img class="menu-card__img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=75"
+                 alt="彩り野菜とグリルした肉をたっぷり盛ったランチボウル" loading="lazy" width="800" height="560">
+            <div class="menu-card__body">
+              <h3 class="menu-card__title"><span class="menu-card__en">Lunch</span>ランチ<small>11:00〜14:00 L.O.</small></h3>
+              <ul class="menu-list">
+                <li>
+                  <span class="menu-list__name">こもれびプレート<em>地元野菜の副菜5種・魚沼産こしひかり・汁物</em></span>
+                  <span class="menu-list__price">1,650円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">森のきのこカレー<em>山のきのこと根菜のスパイスカレー</em></span>
+                  <span class="menu-list__price">1,450円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">雪室熟成ポークのグリル<em>季節の焼き野菜添え・パン or ごはん</em></span>
+                  <span class="menu-list__price">1,880円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">ドリンクセット<em>ランチと一緒にご注文で</em></span>
+                  <span class="menu-list__price">+350円</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Drink -->
+          <div class="menu-card fade-in">
+            <img class="menu-card__img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=75"
+                 alt="ラテアートのカップを手に、コーヒーで乾杯する人たち" loading="lazy" width="800" height="560">
+            <div class="menu-card__body">
+              <h3 class="menu-card__title"><span class="menu-card__en">Drink</span>ドリンク</h3>
+              <ul class="menu-list">
+                <li>
+                  <span class="menu-list__name">こもれびブレンド<em>自家焙煎・中深煎り／ハンドドリップ</em></span>
+                  <span class="menu-list__price">580円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">本日のシングルオリジン<em>その日の気分で選ぶ一杯</em></span>
+                  <span class="menu-list__price">680円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">カフェラテ（HOT / ICE）</span>
+                  <span class="menu-list__price">620円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">山ぶどうのソーダ<em>県産山ぶどうの自家製シロップ</em></span>
+                  <span class="menu-list__price">600円</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sweets -->
+          <div class="menu-card fade-in">
+            <img class="menu-card__img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=75"
+                 alt="チョコレートクリームで飾った手作りのチョコレートケーキ" loading="lazy" width="800" height="560">
+            <div class="menu-card__body">
+              <h3 class="menu-card__title"><span class="menu-card__en">Sweets</span>スイーツ</h3>
+              <ul class="menu-list">
+                <li>
+                  <span class="menu-list__name">森のガトーショコラ<em>自家焙煎コーヒーを生地に練り込んで</em></span>
+                  <span class="menu-list__price">550円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">季節のフルーツタルト<em>果物は時期によって替わります</em></span>
+                  <span class="menu-list__price">620円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">笹団子とほうじ茶のセット<em>新潟のおやつを少しだけ</em></span>
+                  <span class="menu-list__price">680円</span>
+                </li>
+                <li>
+                  <span class="menu-list__name">ケーキセット<em>お好きなドリンクと一緒に</em></span>
+                  <span class="menu-list__price">−100円</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Voice ===== -->
+    <section class="section voice" id="voice">
+      <div class="container">
+        <div class="section__head fade-in">
+          <p class="section__en">Voice</p>
+          <h2 class="section__title">お客様の声</h2>
+        </div>
+
+        <ul class="voice__list">
+          <li class="voice-card fade-in">
+            <p class="voice-card__text">「峠道のドライブ途中に寄りました。テラス席から見える森がとにかくきれいで、野菜のプレートも一品一品おいしかったです。次は紅葉の時期に来たい！」</p>
+            <p class="voice-card__meta"><span class="voice-card__avatar" aria-hidden="true">M</span>30代・女性／ドライブで来店</p>
+          </li>
+          <li class="voice-card fade-in">
+            <p class="voice-card__text">「下山後のコーヒーが最高のご褒美。豆の話を気さくにしてくれるのも嬉しくて、帰りにブレンドの豆を買って帰りました。」</p>
+            <p class="voice-card__meta"><span class="voice-card__avatar" aria-hidden="true">K</span>40代・男性／登山の帰りに来店</p>
+          </li>
+          <li class="voice-card fade-in">
+            <p class="voice-card__text">「友人と予約して行きました。席が確保されていたので週末でも安心。きのこカレーとガトーショコラ、どちらもまた食べたい味です。」</p>
+            <p class="voice-card__meta"><span class="voice-card__avatar" aria-hidden="true">A</span>20代・女性／友人と来店</p>
+          </li>
+        </ul>
+        <p class="voice__caution">※ポートフォリオ用に作成した架空のレビューです。</p>
+      </div>
+    </section>
+
+    <!-- ===== 6. Access ===== -->
+    <section class="section access" id="access">
+      <div class="container">
+        <div class="section__head fade-in">
+          <p class="section__en">Shop Info</p>
+          <h2 class="section__title">店舗情報</h2>
+        </div>
+
+        <div class="access__inner">
+          <dl class="info-list fade-in">
+            <div class="info-list__row">
+              <dt>店名</dt>
+              <dd>森のカフェ こもれび</dd>
+            </div>
+            <div class="info-list__row">
+              <dt>営業時間</dt>
+              <dd>10:00〜17:00<br><small>ランチ 11:00〜14:00 L.O.／カフェ 16:30 L.O.</small></dd>
+            </div>
+            <div class="info-list__row">
+              <dt>定休日</dt>
+              <dd>火曜日・水曜日<br><small>冬季（12月〜3月中旬）は土日祝のみ営業</small></dd>
+            </div>
+            <div class="info-list__row">
+              <dt>住所</dt>
+              <dd>〒949-0000<br>新潟県〇〇郡もりの里町 木漏れ日 1-2-3</dd>
+            </div>
+            <div class="info-list__row">
+              <dt>アクセス</dt>
+              <dd>関越自動車道「〇〇IC」から車で約20分<br>
+                <small>駐車場 12台（無料）／最寄りの登山口から徒歩15分</small></dd>
+            </div>
+            <div class="info-list__row">
+              <dt>席数</dt>
+              <dd>店内 18席／テラス 12席（ペット可）</dd>
+            </div>
+            <div class="info-list__row">
+              <dt>電話</dt>
+              <dd><a class="tel-link" href="tel:0250000000">025-000-0000</a></dd>
+            </div>
+          </dl>
+
+          <div class="map fade-in">
+            <div class="map__frame" role="img" aria-label="店舗周辺の地図（イメージ）。ICから山道を進んだ森の中に店舗があります。">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="400" height="300" fill="#e6ddc8"/>
+                <g fill="#b9c7a8">
+                  <circle cx="300" cy="70" r="60"/><circle cx="350" cy="140" r="50"/><circle cx="250" cy="150" r="45"/>
+                  <circle cx="60" cy="250" r="50"/><circle cx="120" cy="280" r="40"/>
+                </g>
+                <g fill="#8fa889">
+                  <path d="M290 60 l14 26 h-28z"/><path d="M330 110 l14 26 h-28z"/><path d="M262 130 l12 22 h-24z"/>
+                  <path d="M356 160 l12 22 h-24z"/><path d="M70 236 l12 22 h-24z"/>
+                </g>
+                <path d="M-10 40 C 80 60, 120 120, 170 150 S 260 200, 300 150" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round"/>
+                <path d="M-10 40 C 80 60, 120 120, 170 150 S 260 200, 300 150" stroke="#cdbb97" stroke-width="2" stroke-dasharray="8 8" fill="none"/>
+                <path d="M170 150 C 150 210, 180 250, 200 320" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <path d="M20 180 C 90 170, 120 220, 130 300" stroke="#9cc3cf" stroke-width="6" fill="none"/>
+                <g transform="translate(300 150)">
+                  <circle r="18" fill="#2f4a3a" opacity=".15"/>
+                  <path d="M0 -26 C -10 -26 -16 -18 -16 -11 C -16 0 0 12 0 12 C 0 12 16 0 16 -11 C 16 -18 10 -26 0 -26z" fill="#2f4a3a"/>
+                  <circle cy="-12" r="5" fill="#f5efe3"/>
+                </g>
+                <text x="300" y="186" text-anchor="middle" font-size="13" fill="#2f4a3a" font-weight="700">こもれび</text>
+                <text x="18" y="30" font-size="11" fill="#5a3d27">← 〇〇IC</text>
+              </svg>
+            </div>
+            <p class="map__note">※地図はイメージです。実際の店舗ではGoogleマップ等を埋め込みます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. Reserve CTA ===== -->
+    <section class="section reserve" id="reserve">
+      <div class="container reserve__inner">
+        <div class="reserve__head fade-in">
+          <p class="section__en">Reservation</p>
+          <h2 class="section__title">お席のご予約</h2>
+          <p>週末・祝日のお昼どきは混み合います。<br class="sp-only">ご予約いただくと、お待たせせずにご案内できます。</p>
+        </div>
+
+        <div class="reserve__tel fade-in">
+          <p class="reserve__tel-label">お電話でのご予約</p>
+          <a class="reserve__tel-num" href="tel:0250000000">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+            025-000-0000
+          </a>
+          <p class="reserve__tel-time">受付 10:00〜17:00（定休日を除く）</p>
+        </div>
+
+        <form class="form fade-in" id="reserveForm" novalidate>
+          <p class="form__lead">Webでのご予約<span>（<em class="req">*</em>は必須項目）</span></p>
+
+          <div class="form__row form__row--2">
+            <div class="form__field">
+              <label for="date">ご来店日<em class="req">*</em></label>
+              <input type="date" id="date" name="date" required>
+              <p class="form__error" id="dateError" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="time">ご来店時間<em class="req">*</em></label>
+              <select id="time" name="time" required>
+                <option value="">選択してください</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+              </select>
+              <p class="form__error" id="timeError" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="form__field">
+              <label for="people">人数<em class="req">*</em></label>
+              <select id="people" name="people" required>
+                <option value="">選択してください</option>
+                <option value="1">1名</option>
+                <option value="2">2名</option>
+                <option value="3">3名</option>
+                <option value="4">4名</option>
+                <option value="5">5名</option>
+                <option value="6">6名</option>
+                <option value="7+">7名以上（お電話でご相談ください）</option>
+              </select>
+              <p class="form__error" id="peopleError" aria-live="polite"></p>
+            </div>
+            <fieldset class="form__field form__seat">
+              <legend>お席のご希望</legend>
+              <div class="seat-options">
+                <label class="seat-option"><input type="radio" name="seat" value="どちらでも" checked><span>どちらでも</span></label>
+                <label class="seat-option"><input type="radio" name="seat" value="店内"><span>店内</span></label>
+                <label class="seat-option"><input type="radio" name="seat" value="テラス"><span>テラス</span></label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form__field">
+            <label for="name">お名前<em class="req">*</em></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="例）森野 こもれ" required>
+            <p class="form__error" id="nameError" aria-live="polite"></p>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="form__field">
+              <label for="tel">電話番号<em class="req">*</em></label>
+              <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="例）090-0000-0000" required>
+              <p class="form__error" id="telError" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="email">メールアドレス<em class="req">*</em></label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" placeholder="例）example@mail.com" required>
+              <p class="form__error" id="emailError" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="note">ご要望など<span class="optional">任意</span></label>
+            <textarea id="note" name="note" rows="4" placeholder="例）ペット（小型犬1匹）と一緒です／アレルギーがあります など"></textarea>
+          </div>
+
+          <button class="btn btn--sun btn--large btn--block" type="submit">この内容で予約する</button>
+          <p class="form__demo-note">※デモ用のフォームです。送信しても実際の予約は行われません。</p>
+        </form>
+
+        <div class="form-done" id="formDone" hidden tabindex="-1">
+          <p class="form-done__title">ご予約ありがとうございます</p>
+          <p class="form-done__text" id="formDoneText"></p>
+          <p class="form-done__demo">※ポートフォリオ用のデモです。実際の予約・メール送信は行われていません。</p>
+          <button class="btn btn--ghost-dark" type="button" id="formReset">フォームに戻る</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--footer" href="#top">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3 L27 22 H5 Z" fill="currentColor" opacity=".9"/>
+          <path d="M16 10 L24 25 H8 Z" fill="currentColor"/>
+          <rect x="14.5" y="25" width="3" height="4" rx="1" fill="currentColor"/>
+        </svg>
+        <span class="logo__text"><small>森のカフェ</small>こもれび</span>
+      </a>
+      <p class="footer__info">新潟県〇〇郡もりの里町 木漏れ日 1-2-3<br>10:00〜17:00／火・水曜定休</p>
+      <ul class="footer__nav">
+        <li><a href="#about">こもれびについて</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#access">店舗情報</a></li>
+        <li><a href="#reserve">ご予約</a></li>
+      </ul>
+      <p class="footer__disclaimer"><strong>※このサイトはポートフォリオ用の架空の店舗です。</strong><span>実在の店舗・団体・人物とは関係ありません。<br>写真は Unsplash のフリー素材を使用しています。</span></p>
+      <p class="footer__copy"><small>&copy; 2026 森のカフェ こもれび（Portfolio）</small></p>
+    </div>
+  </footer>
+
+  <!-- ===== Mobile fixed CTA ===== -->
+  <div class="fixed-cta" id="fixedCta" aria-hidden="true">
+    <a class="fixed-cta__btn fixed-cta__btn--tel" href="tel:0250000000" tabindex="-1">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+      電話する
+    </a>
+    <a class="fixed-cta__btn fixed-cta__btn--web" href="#reserve" tabindex="-1">Webで席を予約</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
