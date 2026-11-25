@@ -115,7 +115,7 @@
     <section class="section features" id="features">
       <div class="container">
         <div class="section__head fade-in">
-          <p class="section__en">Our Kodawari</p>
+          <p class="section__en">Our Commitment</p>
           <h2 class="section__title">こもれびの、3つのこだわり</h2>
         </div>
 
@@ -375,7 +375,8 @@
           <div class="form__row form__row--2">
             <div class="form__field">
               <label for="date">ご来店日<em class="req">*</em></label>
-              <input type="date" id="date" name="date" required>
+              <input type="date" id="date" name="date" required aria-describedby="dateNote" data-describedby="dateNote">
+              <p class="form__note" id="dateNote">※12月〜3月中旬は土日祝のみ営業です</p>
               <p class="form__error" id="dateError" aria-live="polite"></p>
             </div>
             <div class="form__field">

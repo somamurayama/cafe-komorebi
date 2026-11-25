@@ -370,6 +370,7 @@ body.is-locked { overflow: hidden; }
 .form .is-invalid { border-color: var(--error) !important; background: #fdf4f1 !important; }
 .form__error { min-height: 0; font-size: 12px; color: var(--error); margin-top: 4px; }
 .form__error:empty { display: none; }
+.form__note { margin-top: 6px; font-size: 12px; line-height: 1.6; color: var(--text-sub); }
 
 .form__seat { border: 0; margin-inline: 0; padding: 0; }
 .seat-options { display: flex; gap: 8px; }

@@ -147,7 +147,9 @@
     errorEl.textContent = message;
     field.classList.toggle("is-invalid", Boolean(message));
     field.setAttribute("aria-invalid", String(Boolean(message)));
-    if (message) field.setAttribute("aria-describedby", errorEl.id);
+    // 注記（data-describedby）は常に残し、エラーがあるときだけエラー文を追加する
+    const describedBy = [field.dataset.describedby, message && errorEl.id].filter(Boolean).join(" ");
+    if (describedBy) field.setAttribute("aria-describedby", describedBy);
     else field.removeAttribute("aria-describedby");
     return !message;
   };
